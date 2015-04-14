@@ -18,7 +18,7 @@ public class GerarArquivoMapeado {
             File file = new CriarArquivo().criarArquivoBpa("arquivo.txt");
             BeanWriter out = getBeanWriter(file);
             
-            out.write(new RegistroLinha(1111,"aaaaa", "aaaaaaa", "2345678ddd", new Date(), "011", "1111"));
+            out.write(new RegistroLinha(1111,"aaaaa", "aaaaaaa", "2345678ddd", new Date(), "011", "1111", "aaaaaa"));
             out.flush();
             out.close();
 

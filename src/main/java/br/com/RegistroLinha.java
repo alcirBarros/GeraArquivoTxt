@@ -33,10 +33,12 @@ public class RegistroLinha {
     @Field(length = 2, at = 47, align = Align.LEFT, padding = '0')
     private String texto;
 
+    private String texto2;
+    
     public RegistroLinha() {
     }
 
-    public RegistroLinha(Integer id, String nome, String obs, String test, Date data, String numero, String texto) {
+    public RegistroLinha(Integer id, String nome, String obs, String test, Date data, String numero, String texto, String text2) {
         this.id = id;
         this.nome = nome;
         this.obs = obs;
@@ -44,6 +46,7 @@ public class RegistroLinha {
         this.data = data;
         this.numero = numero;
         this.texto = texto;
+        this.texto2 = texto2;
     }
 
     public Integer getId() {
@@ -101,4 +104,14 @@ public class RegistroLinha {
     public void setTexto(String texto) {
         this.texto = texto;
     }   
+
+    public String getTexto2() {
+        return texto2;
+    }
+
+    public void setTexto2(String texto2) {
+        this.texto2 = texto2;
+    }
+    
+    
 }
